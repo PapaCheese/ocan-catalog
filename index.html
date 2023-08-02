@@ -20,7 +20,7 @@
       color: white;
       font-size: 18px;
       display: flex;
-      align-items: end;
+      align-items: center;
       gap: 8px;
     }
 
@@ -32,25 +32,56 @@
       width: fit-content;
     }
 
+    .title-container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .subtitle {
+      padding: 8px;
+      color: rgb(94, 94, 94);
+      font-size: 14px;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: auto auto auto auto auto auto auto auto auto;
       width: 100%;
       max-width: 100%;
+      gap: 16px;
+    }
+
+    .image-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 8px;
     }
 
-    .image {
+    .image-container img {
       width: 200px;
       max-width: 100%;
       object-fit: cover;
       border-radius: 8px;
     }
 
-    .image-container {
+    .image-details-container {
       width: 100%;
       display: flex;
       justify-content: center;
+      align-items: center;
+      gap: 2px;
+      opacity: 70%;
+    }
+
+    .image-details-container img {
+      width: 18px;
     }
 
     @media only screen and (max-width: 1600px) {
@@ -80,67 +111,509 @@
 <body>
   <div class="topnav">
     <img src="./ocan_logo.svg" height="64px" />
+    <!-- <div>CATALOG</div> -->
   </div>
 
-  <div
-    style="
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      padding: 16px;
-    "
-  >
-    <div class="title">CATALOG</div>
+  <div class="title-container">
+    <div class="title">CANS</div>
   </div>
 
   <div style="padding: 0 8px">
     <div class="grid">
       <div class="image-container">
-        <img src="./catalog/image-054.jpg" class="image" />
+        <img src="./catalog/210ml 55d 70h.jpg" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          210ml&nbsp;
+          <img src="./expand-left-right-fill.svg" />
+          55mm&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          70mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-065.jpg" class="image" />
+        <img src="./catalog/250ml 92h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          250ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          92mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-056.jpg" class="image" />
+        <img src="./catalog/330ml 115h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          330ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          115mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-138.jpg" class="image" />
+        <img src="./catalog/330ml 146h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          330ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          146mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-062.jpg" class="image" />
+        <img src="./catalog/350ml 122h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          350ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          122mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-071.jpg" class="image" />
-      </div>
-      <!-- <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
-      </div>
-      <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
-      </div>
-      <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
+        <img src="./catalog/355ml 122h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          355ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          122mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
+        <img src="./catalog/360ml 155h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          360ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          155mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
+        <img src="./catalog/400ml 133h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          400ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          133mm
+        </div>
       </div>
       <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
+        <img src="./catalog/500ml 55d 150h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-left-right-fill.svg" />
+          55mm&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          150mm
+        </div>
       </div>
+
       <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
+        <img src="./catalog/500ml 55d 186h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-left-right-fill.svg" />
+          55mm&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          186mm
+        </div>
       </div>
+
       <div class="image-container">
-        <img src="./catalog/image-057.jpg" class="image" />
-      </div> -->
+        <img src="./catalog/500ml 123h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          123mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/500ml 140.5h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          140.5mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/500ml 150h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          150mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/500ml 168h square.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          168mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/500ml 168h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          168mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/550ml 167h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          550ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          167mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/650ml 167h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          650ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          167mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/700ml 167h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          700ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          167mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/900ml 167h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          900ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          167mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/900ml 189h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          900ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          189mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/1000ml 208h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          1000ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          208mm
+        </div>
+      </div>
     </div>
   </div>
+
+  <div class="title-container">
+    <div class="title">JARS</div>
+    <div class="subtitle">Manually Closed</div>
+  </div>
+
+  <div style="padding: 0 8px">
+    <div class="grid">
+      <div class="image-container">
+        <img src="./catalog/c-j 250m 80h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          250m&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          80mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 300ml 62h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          300ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          62mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 310ml 100h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          310ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          100mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 365 77h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          365ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          77mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 380ml 90h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          380ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          90mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 380ml 105h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          380ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          105mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 440ml 120h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          440ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          120mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 500ml 115h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          500ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          115mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 520ml 120h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          520ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          120mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 550ml 97h .jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          550ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          97mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 600ml 150h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          600ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          150mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 660ml 150h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          660ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          150mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 670ml 135ml.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          670ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          135ml
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 800ml 160h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          800ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          160mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 900ml 134h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          900ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          134mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 900ml 190h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          900ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          190mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/c-j 1000ml 126h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          1000ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          126mm
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="title-container">
+    <div class="title">JARS</div>
+    <div class="subtitle">Mechanically Closed</div>
+  </div>
+
+  <div style="padding: 0 8px">
+    <div class="grid">
+      <div class="image-container">
+        <img src="./catalog/jar 165ml 45h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          165ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          45mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 250ml 67h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          250ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          67mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 280ml 60h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          280ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          60mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 280ml 70d 80 h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          280ml&nbsp;
+          <img src="./expand-left-right-fill.svg" />
+          70mm&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          80mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 300ml 66h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          300ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          66mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 360ml 85h.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          360ml&nbsp;
+          <img src="./expand-up-down-fill.svg" />
+          85mm
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 600 ml.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          600ml&nbsp;
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 840 ml.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          840ml&nbsp;
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar 850 ml.jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          850ml&nbsp;
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="./catalog/jar-165ml .jpg" class="image" />
+        <div class="image-details-container">
+          <img src="./contrast-drop-2-line.svg" />
+          165ml&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <div style="font-size: 10px; padding: 32px 16px">
+    <div style="font-size: 12px; padding: 64px 32px">
       by OMER TOM Import & Marketing
     </div>
   </footer>
