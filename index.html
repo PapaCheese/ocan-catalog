@@ -64,7 +64,7 @@
       gap: 8px;
     }
 
-    .image-container img {
+    .image-container .image {
       width: 200px;
       max-width: 100%;
       object-fit: cover;
@@ -84,25 +84,30 @@
       width: 18px;
     }
 
-    @media only screen and (max-width: 1600px) {
+    @media only screen and (max-width: 2000px) {
       .grid {
         grid-template-columns: auto auto auto auto auto auto auto;
       }
     }
 
-    @media only screen and (max-width: 1300px) {
+    @media only screen and (max-width: 1600px) {
       .grid {
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
       }
     }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
       .grid {
         grid-template-columns: auto auto auto auto;
       }
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
       .grid {
         grid-template-columns: auto auto auto;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      .grid {
+        grid-template-columns: auto auto;
       }
     }
   </style>
@@ -121,7 +126,7 @@
   <div style="padding: 0 8px">
     <div class="grid">
       <div class="image-container">
-        <img src="./catalog/210ml 55d 70h.jpg" />
+        <img src="./catalog/210ml 55d 70h.jpg" class="image" />
         <div class="image-details-container">
           <img src="./contrast-drop-2-line.svg" />
           210ml&nbsp;
